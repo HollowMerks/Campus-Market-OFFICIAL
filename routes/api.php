@@ -8,4 +8,4 @@ Route::get('/prueba', function () {
 Route::get('/alumnos', [AlumnoController::class, 'index']);
 Route::get('/universidades', [UniversidadController::class, 'index']);
 
-
+#waos

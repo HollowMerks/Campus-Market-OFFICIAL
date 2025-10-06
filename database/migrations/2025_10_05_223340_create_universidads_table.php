@@ -12,7 +12,18 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('universidads', function (Blueprint $table) {
-            $table->id();
+            $table->id('ID_Universidad');
+            $table->String('Nombre_Universidad');
+            $table->String('Correo_Universidad');
+            $table->String('Descripcion_Universidad');
+            $table->integer('Estado_Universidad');
+            $table->Time('Hora_Apertura_Universidad');
+            $table->Time('Hora_Cierre_Universidad');
+            $table->String('Direccion_Universidad');
+            $table->Int('Telefono_Universidad');
+            $table->String('PaginaWeb_Universidad');
+            $table->String('Foto_de_perfil_Universidad');
+            $table->String('Foto_de_portada_Universidad');
             $table->timestamps();
         });
     }
